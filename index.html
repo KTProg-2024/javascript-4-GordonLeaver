@@ -14,17 +14,29 @@
 			  height: 50px;
 			  position: absolute;
 			  background-color: red;
-			}	
+			}
+      button {
+        background-color:blue;
+      }	
+      .clickme {
+        background-color:red;
+        position: relative;
+        left:160px;
+      }
 		</style>
     </head>
 
 	<body>
 		<script src="motion.js"></script>	
-		<button type="button" onclick="myMove()">Click Me</button> 
+		<button type="button" class = "clickme" onclick="myMove()">Click Me</button> 
 		<br><br>
 		<div id ="container">
 		  <div id ="animate"></div>
 		</div>
-		
+		<button type="button" class = "up" onclick="up()">Up</button> 
+    <button type="button" class = "left" onclick="left()">Left</button> 
+    <button type="button" class = "down" onclick="down()">Down</button> 
+    <button type="button" class = "right" onclick="right()">Right</button> 
+
 	</body>
 </html>
